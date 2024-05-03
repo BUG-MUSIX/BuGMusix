@@ -6,9 +6,9 @@ from pyrogram import *
 from pyrogram.types import *
 from logging import getLogger
 
-from MukeshRobot import pbot as app
+from AnonXMusic import pbot as app
 
-from MukeshRobot.database.wel_db import *
+from AnonXMusic.database.wel_db import *
 
 COMMAND_HANDLER = ". /".split() # COMMAND HANDLER
 
