@@ -34,7 +34,7 @@ def circle(pfp, size=(450, 450)):
     return pfp
 
 def welcomepic(pic, user, chat, id, uname):
-    background = Image.open("MukeshRobot/resources/bg.jpg")
+    background = Image.open("AnonXMusic/assets/WELL2.PNG")
     pfp = Image.open(pic).convert("RGBA")
     pfp = circle(pfp)
     pfp = pfp.resize(
@@ -71,9 +71,9 @@ image.show()
     return f"downloads/welcome#{id}.png"
 
 
-@app.on_message(filters.command("xwelcome", COMMAND_HANDLER) & ~filters.private)
+@app.on_message(filters.command("welcome", COMMAND_HANDLER) & ~filters.private)
 async def auto_state(_, message):
-    usage = "**๏ ᴜsᴀɢᴇ ➠ **/xwelcome [ᴇɴᴀʙʟᴇ|ᴅɪsᴀʙʟᴇ]"
+    usage = "**๏ ᴜsᴀɢᴇ ➠ **/welcome [ᴇɴᴀʙʟᴇ|ᴅɪsᴀʙʟᴇ]"
     if len(message.command) == 1:
         return await message.reply_text(usage)
     chat_id = message.chat.id
@@ -139,7 +139,7 @@ async def greet_group(_, member: ChatMemberUpdated):
 ๏ ɴᴀᴍᴇ ➠ {user.mention}
 ๏ ɪᴅ ➠ {user.id}
 ๏ ᴜsᴇʀɴᴀᴍᴇ ➠ @{user.username}
-๏ ᴍᴀᴅᴇ ʙʏ ➠ [ʀᴀʜᴜʟ-ᴊʙ](https://t.me/RAHULSJB)**
+๏ ᴍᴀᴅᴇ ʙʏ ➠ [𝐒 ᴏ ʜ ᴇ ʟ ..!!](https://t.me/NoT_uR_SoHeL)**
 """,
             reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton (f"ᴠɪᴇᴡ ᴜsᴇʀ", url=f"https://t.me/{user.username}")]])
 
@@ -157,6 +157,6 @@ __mod_name__ = "x-ᴡᴇʟᴄᴏᴍᴇ"
 __help__ = """
  ❍ ᴛʜɪs ɪs x sᴘᴇᴄɪᴀʟ ᴡᴇʟᴄᴏᴍᴇ ғᴇᴀᴛᴜʀᴇs.
 
- ❍ /xwelcome <enable> ➛ ᴇɴᴀʙʟᴇ x sᴘᴇᴄɪᴀʟ ᴡᴇʟᴄᴏᴍᴇ.
- ❍ /xwelcome <disable> ➛ ᴅɪsᴀʙʟᴇ  x sᴘᴇᴄɪᴀʟ ᴡᴇʟᴄᴏᴍᴇ.
+ ❍ /welcome <enable> ➛ ᴇɴᴀʙʟᴇ x sᴘᴇᴄɪᴀʟ ᴡᴇʟᴄᴏᴍᴇ.
+ ❍ /welcome <disable> ➛ ᴅɪsᴀʙʟᴇ  x sᴘᴇᴄɪᴀʟ ᴡᴇʟᴄᴏᴍᴇ.
  """
