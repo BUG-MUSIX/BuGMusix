@@ -51,7 +51,7 @@ draw = ImageDraw.Draw(image)
 
 # Add the text with a neon effect
 text_color = (255, 255, 255)
-neon_color = (0, 255, 255)  # Neon color (e.g., cyan)
+
 neon_radius = 5  # Radius of the neon glow
 
 draw.text((30, 300), f'NAME: {unidecode(user)}', fill=neon_color, font=font)
