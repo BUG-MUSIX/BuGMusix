@@ -12,7 +12,7 @@ from pyrogram.types import (
 from config import LOGGER_ID as LOG_GROUP_ID
 from AnonXMusic import app
 from AnonXMusic.utils.database import get_assistant
-from AnonXMusic.utils.database import delete_served_chat
+
 
 photo = [
     "https://telegra.ph/file/1949480f01355b4e87d26.jpg",
