@@ -12,7 +12,7 @@ from pyrogram.types import (
 from config import LOGGER_ID as LOG_GROUP_ID
 from AnonXMusic import app
 from AnonXMusic.core.userbot import Userbot
-from AnonXMusic.utils.database import delete_served_chat
+
 from AnonXMusic.utils.database import get_assistant
 
 
